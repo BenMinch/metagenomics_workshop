@@ -1,0 +1,23 @@
+# Name of the Conda environment (optional)
+name: bioinformatics-workshop-env
+
+# List of channels to search for packages, in order of priority
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+# List of packages to install
+dependencies:
+  # --- Core Python and Jupyter ---
+  - python=3.9
+  - jupyterlab
+
+  # --- Bioinformatics Tools ---
+  - seqkit
+  - fastqc
+  - multiqc  # Often used to aggregate FastQC reports
+
+  # --- Common Python Libraries for Data Science ---
+  - pandas
+  - matplotlib
